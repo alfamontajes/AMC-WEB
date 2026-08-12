@@ -308,3 +308,190 @@ footer {
 .navbar .container {
   align-items: center;
 }
+
+/* =========================================
+   FOOTER - CONTACTO Y UBICACIÓN
+========================================= */
+
+footer h6 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+
+/* Contacto */
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.footer-contact i {
+  width: 18px;
+  flex-shrink: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-contact a {
+  color: #d6deea;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+
+/* Separa contacto del mapa */
+.footer-location {
+  padding-left: 45px;
+}
+
+
+/* Ubicación */
+.footer-location h6 {
+  font-weight: 800;
+}
+
+
+/* Tablet y celular */
+@media (max-width: 991.98px) {
+
+  .footer-location {
+    padding-left: 12px;
+  }
+
+}
+footer .col-md-3 > p {
+  max-width: 280px;
+}
+
+/* =========================================
+   FOOTER - INFORMACIÓN DE EMPRESA
+========================================= */
+
+.footer-company h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+
+  text-shadow:
+    2px 2px 3px rgba(0, 0, 0, 0.75),
+    0 0 6px rgba(255, 255, 255, 0.18);
+}
+
+.footer-company h5::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin-top: 8px;
+  background: #d71920;
+  border-radius: 2px;
+}
+
+.footer-company p {
+  max-width: 330px;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+
+.footer-company-extra {
+  font-size: 15px;
+  color: #b9c6d5;
+}
+
+.footer-company-tagline {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.footer-map {
+  width: 100%;
+  max-width: 240px;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 110px;
+  display: block;
+}
+
+/* =========================================
+   FOOTER - TÍTULOS Y ESPACIADO
+========================================= */
+
+footer h5,
+footer h6 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  margin-bottom: 14px;
+
+  text-shadow:
+    2px 2px 3px rgba(0, 0, 0, 0.75),
+    0 0 6px rgba(255, 255, 255, 0.18);
+}
+
+
+/* Más espacio entre teléfonos y correos */
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 13px;
+  line-height: 1.45;
+}
+
+
+/* Un poco más de separación entre icono y texto */
+.footer-contact i {
+  width: 18px;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+
+/* Mantiene los correos cómodos de leer */
+.footer-contact a,
+.footer-contact span {
+  font-size: 16px;
+}
+
+/* =========================================
+   FOOTER - TÍTULOS UNIFORMES
+========================================= */
+
+.footer-contact h6,
+.footer-location h6 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+/* Línea roja debajo de Contacto y Ubicación */
+.footer-contact h6::after,
+.footer-location h6::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin-top: 8px;
+  background: #d71920;
+  border-radius: 2px;
+}
