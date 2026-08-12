@@ -74,30 +74,27 @@ footer a:hover { color: white; }
 }
 
 /* Menú desplegable */
-.navbar .dropdown-menu {
-  min-width: 255px;
-  padding: 8px 0;
-  margin-top: 0;
-  background-color: #ffffff;
-  border: 1px solid #e2e6ea;
-  border-top: 4px solid #d71920;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 12px 30px rgba(8, 24, 39, 0.16);
-}
-
 .navbar .dropdown-item {
-  padding: 10px 18px;
+  padding: 12px 18px;
   color: #1d2731;
   white-space: nowrap;
+
+  border-left: 4px solid transparent;
+
   transition:
     color 0.2s ease,
-    background-color 0.2s ease;
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    padding-left 0.2s ease;
 }
 
 .navbar .dropdown-item:hover,
 .navbar .dropdown-item:focus {
   color: #d71920;
-  background-color: #f4f5f7;
+  background-color: #e9edf2;
+
+  border-left-color: #d71920;
+  padding-left: 23px;
 }
 
 /* Evita problemas de superposición con el contenido */
@@ -494,4 +491,72 @@ footer h6 {
   margin-top: 8px;
   background: #d71920;
   border-radius: 2px;
+}
+
+/* =========================================
+   MENÚ PRINCIPAL - ACABADO VISUAL DEFINITIVO
+========================================= */
+
+/* Fondo del encabezado */
+.navbar {
+  background-color: #f8fafc !important;
+  border-bottom: 4px solid #d71920;
+  box-shadow: 0 4px 16px rgba(8, 24, 39, 0.12);
+}
+
+
+/* Opciones principales */
+.navbar .navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70px;
+  padding: 0 14px !important;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #081827 !important;
+
+  border-radius: 8px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* Al pasar el mouse */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #d71920 !important;
+  background-color: #e9edf2;
+
+  box-shadow:
+    inset 0 -3px 0 rgba(215, 25, 32, 0.35);
+}
+
+
+/* Servicios / Alquiler cuando el desplegable está abierto */
+.navbar .navbar-nav .nav-link.show {
+  color: #d71920 !important;
+  background-color: #e9edf2;
+
+  box-shadow:
+    inset 0 -3px 0 #d71920;
+}
+
+
+/* Mantiene el comportamiento correcto en celular */
+@media (max-width: 991.98px) {
+
+  .navbar .navbar-nav .nav-link {
+    justify-content: flex-start;
+    min-height: auto;
+    padding: 12px 10px !important;
+    border-radius: 6px;
+  }
+
 }
