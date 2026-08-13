@@ -17,7 +17,18 @@ body { font-family: Arial, Helvetica, sans-serif; color: var(--alfa-black); }
   min-height: 72vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, rgba(8,55,95,.94), rgba(11,79,138,.70)), url('../img/hero-principal.jpg') center/cover no-repeat;
+  padding: 70px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 55, 95, 0.96) 0%,
+      rgba(8, 55, 95, 0.86) 38%,
+      rgba(11, 79, 138, 0.48) 65%,
+      rgba(11, 79, 138, 0.12) 100%
+    ),
+    url('../img/imagen_principal.png') center right / cover no-repeat;
+
   color: white;
 }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 4.6rem); font-weight: 800; }
@@ -559,4 +570,15 @@ footer h6 {
     border-radius: 6px;
   }
 
+}
+
+
+/* =========================================
+   HERO - TEXTO MÁS A LA IZQUIERDA
+========================================= */
+
+.hero .container {
+  max-width: 100%;
+  padding-left: 35px;
+  padding-right: 40px;
 }
