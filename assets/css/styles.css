@@ -1049,3 +1049,410 @@ footer h6 {
   position: relative;
   z-index: 2;
 }
+
+
+/* =========================================
+   ESCALERAS TIPO GATO - HERO
+========================================= */
+
+.escalera-hero {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 600px;
+  padding: 70px 0;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      110deg,
+      #08375f 0%,
+      #0b4f8a 55%,
+      #1269a8 100%
+    );
+
+  color: #ffffff;
+}
+
+
+/* Patrón industrial sutil */
+.escalera-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.12;
+  pointer-events: none;
+
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 180px,
+      rgba(255,255,255,.18) 180px,
+      rgba(255,255,255,.18) 187px,
+      transparent 187px,
+      transparent 360px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 120px,
+      rgba(255,255,255,.11) 120px,
+      rgba(255,255,255,.11) 126px,
+      transparent 126px,
+      transparent 240px
+    ),
+    repeating-linear-gradient(
+      48deg,
+      transparent 0,
+      transparent 250px,
+      rgba(255,255,255,.10) 250px,
+      rgba(255,255,255,.10) 258px,
+      transparent 258px,
+      transparent 500px
+    );
+}
+
+
+.escalera-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.escalera-hero-copy {
+  max-width: 720px;
+}
+
+.escalera-badge {
+  display: inline-block;
+
+  margin-bottom: 26px;
+  padding: 9px 16px;
+
+  background: rgba(255,255,255,.95);
+  color: #0b4f8a;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  border-radius: 8px;
+}
+
+
+/* Título principal */
+.escalera-hero h1 {
+  margin-bottom: 0;
+
+  font-size: clamp(4.2rem, 6vw, 6.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+
+  color: #ffffff;
+}
+
+
+/* Línea roja debajo del título */
+.escalera-red-line {
+  width: 105px;
+  height: 5px;
+
+  margin: 28px 0 30px;
+
+  background: #d71920;
+  border-radius: 4px;
+}
+
+
+/* Texto descriptivo */
+.escalera-hero-copy p {
+  max-width: 700px;
+
+  margin-bottom: 36px;
+
+  font-size: 1.55rem;
+  line-height: 1.65;
+  font-weight: 600;
+
+  color: rgba(255,255,255,.96);
+}
+
+
+/* Botón */
+.escalera-cta {
+  padding: 17px 34px;
+
+  background: #ffffff;
+  border: 2px solid #ffffff;
+
+  color: #08375f;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+
+  border-radius: 10px;
+
+  transition:
+    background-color .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.escalera-cta:hover {
+  background: #d71920;
+  border-color: #d71920;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.escalera-video-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+
+.escalera-video {
+  display: block;
+
+  width: auto;
+  height: 640px;
+  max-width: 100%;
+
+  object-fit: contain;
+
+  border-radius: 22px;
+
+  border: 4px solid rgba(255,255,255,.14);
+
+  box-shadow:
+    0 24px 50px rgba(0,0,0,.28);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991.98px) {
+
+  .escalera-hero {
+    min-height: auto;
+    padding: 55px 0;
+  }
+
+  .escalera-hero-copy {
+    max-width: 100%;
+  }
+
+  .escalera-video {
+    height: 480px;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+  .escalera-hero {
+    padding: 45px 0;
+  }
+
+  .escalera-hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .escalera-hero-copy p {
+    font-size: 1.1rem;
+  }
+
+  .escalera-video {
+    height: 420px;
+  }
+
+}
+
+/* =========================================
+   GALERÍA DEL SERVICIO - ESCALERAS
+========================================= */
+
+.escalera-gallery {
+  width: 100%;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 22px;
+  border-top: 5px solid #0b4f8a;
+  border-bottom: 5px solid #d71920;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+}
+
+.escalera-gallery h3 {
+  color: #08375f;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.escalera-gallery .carousel {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.escalera-gallery .carousel-inner {
+  border-radius: 18px;
+  background: transparent;
+}
+.escalera-gallery .carousel-item {
+  height: 720px;
+  background: transparent;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.escalera-gallery .carousel-item img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: top center;
+  display: block;
+  margin: 0 auto;
+}
+
+.escalera-gallery .carousel-control-prev,
+.escalera-gallery .carousel-control-next {
+  width: 12%;
+}
+
+.escalera-gallery .carousel-control-prev-icon,
+.escalera-gallery .carousel-control-next-icon {
+  background-size: 70% 70%;
+}
+
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .escalera-gallery .carousel-item {
+    height: 620px;
+  }
+}
+
+
+/* Celular */
+@media (max-width: 575.98px) {
+  .escalera-gallery .carousel-item {
+    height: 480px;
+  }
+}
+
+/* =========================================
+   ESCALERAS - ALINEACIÓN TEXTO / GALERÍA
+========================================= */
+
+.escalera-content-text {
+  padding-top: 45px;
+}
+
+@media (max-width: 991.98px) {
+  .escalera-content-text {
+    padding-top: 0;
+  }
+}
+
+/* =========================================
+   ESCALERAS - FONDO SECCIÓN DE CONTENIDO
+========================================= */
+
+.escalera-content-section {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f4f7fb 0%,
+      #eef3f8 100%
+    );
+}
+
+/* Patrón estructural suave */
+.escalera-content-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+  opacity: 0.5;
+
+  background-image:
+
+    /* vigas verticales */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 135px,
+      rgba(8, 55, 95, 0.22) 135px,
+      rgba(8, 55, 95, 0.22) 139px,
+      transparent 139px,
+      transparent 270px
+    ),
+
+    /* vigas horizontales */
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 95px,
+      rgba(8, 55, 95, 0.14) 95px,
+      rgba(8, 55, 95, 0.14) 99px,
+      transparent 99px,
+      transparent 190px
+    ),
+
+    /* arriostramiento diagonal */
+    repeating-linear-gradient(
+      50deg,
+      transparent 0,
+      transparent 205px,
+      rgba(8, 55, 95, 0.13) 205px,
+      rgba(8, 55, 95, 0.13) 210px,
+      transparent 210px,
+      transparent 415px
+    ),
+
+    repeating-linear-gradient(
+      -50deg,
+      transparent 0,
+      transparent 205px,
+      rgba(8, 55, 95, 0.09) 205px,
+      rgba(8, 55, 95, 0.09) 210px,
+      transparent 210px,
+      transparent 415px
+    );
+}
+
+/* Mantiene texto, galería y tarjeta por encima del patrón */
+.escalera-content-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
