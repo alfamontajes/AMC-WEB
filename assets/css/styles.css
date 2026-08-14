@@ -662,3 +662,40 @@ footer h6 {
 .bg-light {
   background: linear-gradient(180deg, #f4f7fb 0%, #eef3f8 100%) !important;
 }
+
+/* =========================================
+   NOSOTROS - IMAGEN PRINCIPAL
+========================================= */
+
+.nosotros-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 14px 30px rgba(15, 23, 42, 0.16);
+}
+
+
+/* Tablet */
+@media (max-width: 991.98px) {
+
+  .nosotros-image {
+    height: 320px;
+  }
+
+}
+
+
+/* Celular */
+@media (max-width: 575.98px) {
+
+  .nosotros-image {
+    height: 250px;
+  }
+
+}
