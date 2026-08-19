@@ -1540,3 +1540,89 @@ footer h6 {
   }
 
 }
+
+/* =========================================
+   FONDO CON PATRÓN - SECCIÓN SERVICIOS
+========================================= */
+
+.services-pattern-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #eef3f8;
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+}
+
+/* Patrón industrial similar al de otras páginas */
+.services-pattern-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 1;
+
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 180px,
+      rgba(8, 55, 95, 0.08) 180px,
+      rgba(8, 55, 95, 0.08) 184px,
+      transparent 184px,
+      transparent 360px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 120px,
+      rgba(8, 55, 95, 0.06) 120px,
+      rgba(8, 55, 95, 0.06) 124px,
+      transparent 124px,
+      transparent 240px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 240px,
+      rgba(8, 55, 95, 0.05) 240px,
+      rgba(8, 55, 95, 0.05) 244px,
+      transparent 244px,
+      transparent 480px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0,
+      transparent 240px,
+      rgba(8, 55, 95, 0.05) 240px,
+      rgba(8, 55, 95, 0.05) 244px,
+      transparent 244px,
+      transparent 480px
+    );
+}
+
+.services-pattern-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================================
+   CTA - SECCIÓN COMPACTA
+========================================= */
+
+.cta-section {
+  background: #ffffff;
+  padding: 10px 0 22px;
+  margin: 0;
+}
+
+.cta-section .container {
+  margin-bottom: 0;
+}
+
+.cta {
+  background: var(--alfa-blue-dark);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 28px 25px;
+  margin-bottom: 0;
+}
