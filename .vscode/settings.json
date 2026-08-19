@@ -11,5 +11,12 @@
         "statusBar.debuggingForeground": "#FCFCFF",
         "statusBar.noFolderBackground": "#15158E",
         "statusBar.noFolderForeground": "#FCFCFF"
-    }
+    },
+    "python-envs.pythonProjects": [
+        {
+            "path": "servicios",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
